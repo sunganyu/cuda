@@ -1,11 +1,4 @@
-FROM nvidia/cuda
+FROM tensorflow/tensorflow:latest-gpu
 
 RUN mkdir ~/gary
 RUN apt-get update
-RUN apt-get install software-properties-common
-RUN add-apt-repository ppa:jonathonf/python-2.7
-RUN apt-get update
-RUN apt-get install python
-RUN apt-get install python-pip python-dev build-essential 
-RUN pip install --upgrade pip 
-RUN apt-get install vim nano
